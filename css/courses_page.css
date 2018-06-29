@@ -1,0 +1,91 @@
+html {
+  scroll-behavior: smooth; }
+
+body {
+  margin: 0px;
+  padding: 0px; }
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 100px;
+  background: grey;
+  width: 100%;
+  box-sizing: border-box;
+  position: fixed;
+  z-index: 1;
+  background-color: white; }
+
+.headerimage {
+  float: left;
+  margin-left: -20px; }
+
+header nav {
+  float: right; }
+
+header nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex; }
+
+header nav ul li {
+  list-style: none; }
+
+header nav ul li a {
+  height: 50px;
+  line-height: 50px;
+  padding: 0 20px;
+  color: grey;
+  text-decoration: none;
+  display: block; }
+
+header nav ul li a:hover,
+header nav ul li a.active {
+  color: black;
+  background: #e38f84; }
+
+.menu-toggle {
+  color: #e38f84;
+  float: right;
+  line-height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  display: none; }
+
+@media screen and (max-width: 768px) {
+  header {
+    padding: 0 20px; }
+
+  .menu-toggle {
+    display: block; }
+
+  header nav {
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 50px);
+    background: white;
+    top: 50px;
+    left: -100%;
+    transition: 0.5s; }
+
+  header nav.active {
+    left: 0; }
+
+  header nav ul {
+    display: block;
+    text-align: center; }
+
+  header nav ul li a {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2); } }
+.search-container {
+  margin-left: 70px; }
+
+#search-bar {
+  height: 15px;
+  padding-top: 5px; }
+
+#search-button {
+  margin-left: -4px; }
+
+/*# sourceMappingURL=courses_page.css.map */
